@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); */
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,14 +14,14 @@ body {
   display: flex;
   justify-content: center;
   /* align-items used for box-centering */
-  align-items: center;
+  /* align-items: center;
   min-height: 100vh;
   background: url('./Assets/Images/Guide 2.jpg') no-repeat;
   background-size: cover;
   background-position: center;
-}
+} */
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */ 

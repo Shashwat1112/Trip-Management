@@ -2,41 +2,36 @@ import React from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { MdPassword } from "react-icons/md";
 import { Outlet, Link } from "react-router-dom";
-import "../Customer/CustomerLogin.css";
+// import "../Guide/GuideLogin.css";
 
-const CustomerLogin = () => {
+const ForgotPwd = () => {
   return (
     <div>
       <div className="wrapper">
         <form action="">
-          <h1>Customer Login</h1>
+          <h1>Enter your registered email address</h1>
           <div className="input-box">
             <FaUserCircle className="icon" />
             <input type="email" placeholder="Username" required />
           </div>
-          <div className="input-box">
+          {/* <div className="input-box">
             <MdPassword className="icon" />
             <input type="password" placeholder="Password" required />
-          </div>
+          </div> */}
 
-          <div className="remember-forget">
+          {/* <div className="remember-forget">
             <label>
               <input type="checkbox" />
-              Remember me
+              Remember me{" "}
             </label>
-            <Link to="/Forgot_password"> Forgot Password</Link>{" "}
-          </div>
+            <a href="#"> Forgot Password</a>
+          </div> */}
 
-          <button type="submit">Login</button>
+          <button type="submit">Submit</button>
 
           <div className="register">
             <p>
-              Don't have an account ?{" "}
-              <Link style={{ textDecoration: "none" }} to="/Customer_Signup">
-                <a href="#">
-                  Register
-                </a>
-              </Link>{" "}
+              Don't have an account ? <Link to="/Customer_Signup" style={{textDecoration:"none"}}>Register</Link>
             </p>
           </div>
         </form>
@@ -46,4 +41,4 @@ const CustomerLogin = () => {
   );
 };
 
-export default CustomerLogin;
+export default ForgotPwd;

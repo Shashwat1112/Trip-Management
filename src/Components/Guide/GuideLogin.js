@@ -2,6 +2,7 @@ import React from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { MdPassword } from "react-icons/md";
 import "../Guide/GuideLogin.css";
+import { Outlet, Link } from "react-router-dom";
 
 const GuideLogin = () => {
   return (
@@ -22,7 +23,7 @@ const GuideLogin = () => {
             <input type="checkbox" />
             Remember me{" "}
           </label>
-          <a href="#"> Forgot Password</a>
+          <a href="/GuideLogin"> Forgot Password</a>
         </div>
 
         <button type="submit">Login</button>

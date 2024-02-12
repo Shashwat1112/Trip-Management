@@ -1,15 +1,13 @@
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { MdPassword } from "react-icons/md";
-import { Outlet, Link } from "react-router-dom";
-import "../Customer/CustomerLogin.css";
 
-const CustomerLogin = () => {
+const AdminLogin = () => {
   return (
     <div>
       <div className="wrapper">
         <form action="">
-          <h1>Customer Login</h1>
+          <h1>Admin Login</h1>
           <div className="input-box">
             <FaUserCircle className="icon" />
             <input type="email" placeholder="Username" required />
@@ -22,23 +20,16 @@ const CustomerLogin = () => {
           <div className="remember-forget">
             <label>
               <input type="checkbox" />
-              Remember me
+              Remember me{" "}
             </label>
-            <Link to="/Forgot_password"> Forgot Password</Link>{" "}
+            <a href="/GuideLogin"> Forgot Password</a>
           </div>
 
           <button type="submit">Login</button>
 
-          <div className="register">
-            <p>
-              Don't have an account ?{" "}
-              <Link style={{ textDecoration: "none" }} to="/Customer_Signup">
-                <a href="#">
-                  Register
-                </a>
-              </Link>{" "}
-            </p>
-          </div>
+          {/* <div className='register'>
+                    <p>Don't have an account? <a href='#'>Register</a></p>
+                </div> */}
         </form>
           
       </div>
@@ -46,4 +37,4 @@ const CustomerLogin = () => {
   );
 };
 
-export default CustomerLogin;
+export default AdminLogin;
