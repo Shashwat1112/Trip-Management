@@ -6,6 +6,10 @@ import { Outlet, Link } from "react-router-dom";
 
 const GuideLogin = () => {
   return (
+    <div  className="container p-5">
+    <div className="row">
+    <div className="col-xl-3"></div>
+      <div className="col-xl-6">
     <div className="wrapper">
       <form action="">
         <h1>Guide Login</h1>
@@ -32,8 +36,12 @@ const GuideLogin = () => {
                     <p>Don't have an account? <a href='#'>Register</a></p>
                 </div> */}
       </form>
-        
+        </div>
+      </div>
+      <div className="col-xl-3"></div>
+      </div>
     </div>
+    
   );
 };
 export default GuideLogin;

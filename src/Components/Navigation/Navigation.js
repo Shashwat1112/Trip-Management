@@ -44,14 +44,28 @@ const Navigation = () => {
                   </Link>{" "}
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">
+                <Link style={{ textDecoration: "none" }} to="/About_Us"><a class="nav-link active" href="#">
                     About Us
-                  </a>
+                  </a></Link>{" "}
                 </li>
                 <li class="nav-item">
                   <Link style={{ textDecoration: "none" }} to="/Contact">
                     <a class="nav-link active" aria-current="page" href="#">
                       Contact
+                    </a>
+                  </Link>{" "}
+                </li>
+                <li class="nav-item">
+                  <Link style={{ textDecoration: "none" }} to="/Tour">
+                    <a class="nav-link active" aria-current="page" href="#">
+                      Tour
+                    </a>
+                  </Link>{" "}
+                </li>
+                <li class="nav-item">
+                  <Link style={{ textDecoration: "none" }} to="/Add_Tours">
+                    <a class="nav-link active" aria-current="page" href="#">
+                     Add-Tour
                     </a>
                   </Link>{" "}
                 </li>

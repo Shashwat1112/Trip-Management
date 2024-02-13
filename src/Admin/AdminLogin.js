@@ -4,7 +4,10 @@ import { MdPassword } from "react-icons/md";
 
 const AdminLogin = () => {
   return (
-    <div>
+    <div  className="container p-5">
+    <div className="row">
+    <div className="col-xl-3"></div>
+      <div className="col-xl-6">
       <div className="wrapper">
         <form action="">
           <h1>Admin Login</h1>
@@ -32,6 +35,9 @@ const AdminLogin = () => {
                 </div> */}
         </form>
           
+      </div>
+      </div>
+      <div className="col-xl-3"></div>
       </div>
     </div>
   );

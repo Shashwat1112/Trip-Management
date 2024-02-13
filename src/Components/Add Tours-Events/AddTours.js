@@ -4,7 +4,7 @@ const AddTours = () => {
   return (
     <div>
         <div className="container">
-            <div className="row">
+            <div className="row p-5">
                 <div className="col-xl-3"></div>
                 <div className="col-xl-6">
         <h2 style={{textAlign:"center"}}>Add Events and Tours</h2>

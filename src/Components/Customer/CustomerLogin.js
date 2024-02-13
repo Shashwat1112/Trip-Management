@@ -6,7 +6,10 @@ import "../Customer/CustomerLogin.css";
 
 const CustomerLogin = () => {
   return (
-    <div>
+    <div  className="container p-5">
+    <div className="row">
+    <div className="col-xl-3"></div>
+      <div className="col-xl-6">
       <div className="wrapper">
         <form action="">
           <h1>Customer Login</h1>
@@ -41,6 +44,9 @@ const CustomerLogin = () => {
           </div>
         </form>
           
+      </div>
+      </div>
+      <div className="col-xl-3"></div>
       </div>
     </div>
   );

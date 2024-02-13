@@ -10,10 +10,14 @@ import GuideLogin from "../src/Components/Guide/GuideLogin"
 import AdminLogin from "./Admin/AdminLogin";
 import CustomerSignup from "./Components/Customer/CustomerSignup";
 import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
+import Tour from "./Components/Tour/Tour";
+import AboutUs from "./Components/AboutUs/AboutUs";
 function App() {
   return (
-    <BrowserRouter>
+   
       <div className="App">
+         <BrowserRouter>
         <Navigation/>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -27,10 +31,14 @@ function App() {
           <Route path="Admin_Login" element={<AdminLogin/>}></Route>
           <Route path="Customer_Signup" element={<CustomerSignup/>}></Route>
           <Route path="Contact" element={<Contact/>}></Route>
+          <Route path="Tour" element={<Tour/>}></Route>
+          <Route path="About_Us" element={<AboutUs/>}></Route>
           {/* Add more routes here if needed */}
         </Routes>
-      </div>
+        <Footer/>
+     
     </BrowserRouter>
+    </div>
   );
 }
 

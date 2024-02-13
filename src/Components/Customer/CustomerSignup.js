@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 
 const CustomerSignup = () => {
   return (
+    <div  className="container p-5">
+      <div className="row">
+      <div className="col-xl-3"></div>
+        <div className="col-xl-6">
     <div className="wrapper">
       <form action="">
         <h1>Customer Signup</h1>
@@ -55,6 +59,10 @@ const CustomerSignup = () => {
 
         <button type="submit">Signup</button>
       </form>
+    </div>
+    </div>
+    <div className="col-xl-3"></div>
+    </div>
     </div>
   );
 };
